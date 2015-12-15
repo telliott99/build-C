@@ -1,6 +1,6 @@
 I'm going to use this project as a set of notes about how to build and use C libraries on OS X, from the very simplest to more complex and realistic examples.
 
-## Step 1:  Single file
+#### Step 1:  Single file
 
 test.c
 
@@ -30,7 +30,7 @@ f1: 1;  main 2
 ```
 <hr>
 
-## Step 2:  Separate source .c files (3 of them)
+#### Step 2:  Separate source .c files (3 of them)
 
 add1.c
 
@@ -81,7 +81,7 @@ f2: 10;  main 20
 
 <hr>
 
-## Step 3:  Add a header .h file
+#### Step 3:  Add a header .h file
 
 Remove the line "extern" declaration from `useadd.c`, and the build fails.
 Add an import for a header file: `#import "add.h"` plus that file:
@@ -106,7 +106,7 @@ f2: 10;  main 20
 
 <hr>
 
-## Step 4:  Pre-built binaries
+#### Step 4:  Pre-built binaries
 
 Use the ``-c`` flag to ``clang``:
 
@@ -127,7 +127,7 @@ f2: 10;  main 20
 
 <hr>
 
-Step 5:  Combine `add1.c` and `add2.c` into static library.
+#### Step 5:  Combine `add1.c` and `add2.c` into static library.
 
 ```bash
 > libtool -static add*.o -o libadd.a
@@ -145,7 +145,7 @@ f2: 10;  main 20
 
 <hr>
 
-Step 6:  Combine `add1.c` and `add2.c` into a dynamic library.  To use it we also compile `useadd.c` to an object .o file.
+#### Step 6:  Combine `add1.c` and `add2.c` into a dynamic library.  To use it we also compile `useadd.c` to an object .o file.
 
 ```bash
 > clang -c useadd.c
@@ -167,7 +167,7 @@ f2: 10;  main 20
 
 <hr>
 
-Step 7:  Use an OS X framework from the command line:
+#### Step 7:  Use an OS X framework from the command line:
 
 test2.m
 ```Objective C
@@ -188,7 +188,11 @@ int main (int argc, const char* argv[]) {
 ```
 <hr>
 
-Step 8:  Build `add1.c` and `add2.c` into a framework using Xcode.  Use that framework from the command line.  I will just link to the [blog](http://telliott99.blogspot.com/2015/12/swift-using-c-framework.html) for an explanation of how to do this.  Once we have the framework, we can copy it into the build directory and do:
+#### Step 8:  Build `add1.c` and `add2.c` into a framework using Xcode.
+
+Use that framework from the command line.  
+
+I will just link to the [blog](http://telliott99.blogspot.com/2015/12/swift-using-c-framework.html) for an explanation of how to do this.  Once we have the framework, we can copy it into the build directory and do:
 
 ```bash
 > clang -g -o useadd -F .  -framework Adder useadd.c
@@ -210,24 +214,32 @@ f2: 10;  main 20
 >
 ```
 
-Step 9:  Use the Adder framework from a new Xcode Cocoa app written in Objective-C.  Simply drag the header from a Finder window onto the Xcode General tab under Linked Frameworks and Libraries.
+#### Step 9:  Use the Adder framework from a new Xcode Cocoa app written in Objective-C.  
+
+Simply drag the header from a Finder window onto the Xcode General tab under Linked Frameworks and Libraries.
 
 In the AppDelegate, do:
 ```Objective-C
 #import "Adder/Adder.h"
 ```
 
-This was enough on one trial I did.  But upon repeating all the steps now, it fails... Xcode says it can't find the header.  Fix this by going to Build Settings > Search Paths > Framework Search Paths, and add the path `~/Library/Frameworks` under the app `AdderOC` (not the project).  Now it works.
+This was enough on one trial I did.  But upon repeating all the steps now, it fails... Xcode says it can't find the header.  Fix this by going to Build Settings > Search Paths > Framework Search Paths, and add the path `~/Library/Frameworks` under the app `AdderOC` (not the project).
+
+Now it works.
 
 Add this code to the AppDelegate:
 
 ```Objective-C
-NSDictionary *eD = [[NSProcessInfo processInfo] environment];
-NSLog(@"%@",[[eD objectForKey:@"USER"] description]);
+int x = f1(1);
+printf("AD: %d;", x);
 ```
 
-Run the app, and the debugger prints:
+The compiler complains that "implicit declaration of function 'f1' is invalid in C99".  But it's just a warning.  Run the app, and the debugger prints:
 
 ```
-2015-12-15 18:29:18.275 AdderOC[28631:212114] telliott
+f1: 1;AD: 2;
 ```
+
+#### Step 10:  Use the Adder framework from a new Xcode Cocoa app written in Swift.
+
+I was able to import Adder without any trouble, once I added a bridging header.  But I was not able to call the function `f1` from Swift.

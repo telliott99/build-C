@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		753F491F1C20D790002F0AE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 753F491E1C20D790002F0AE4 /* AppDelegate.m */; };
+		753F49221C20D790002F0AE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 753F49211C20D790002F0AE4 /* main.m */; };
+		753F49241C20D790002F0AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753F49231C20D790002F0AE4 /* Assets.xcassets */; };
+		753F49271C20D790002F0AE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753F49251C20D790002F0AE4 /* MainMenu.xib */; };
+		753F49321C20D790002F0AE4 /* AdderOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 753F49311C20D790002F0AE4 /* AdderOCTests.m */; };
+		753F493D1C20D790002F0AE4 /* AdderOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 753F493C1C20D790002F0AE4 /* AdderOCUITests.m */; };
+		7570C2311C20DEA300D40F14 /* Adder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7570C2301C20DEA300D40F14 /* Adder.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		753F492E1C20D790002F0AE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753F49121C20D790002F0AE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753F49191C20D790002F0AE4;
+			remoteInfo = AdderOC;
+		};
+		753F49391C20D790002F0AE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753F49121C20D790002F0AE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753F49191C20D790002F0AE4;
+			remoteInfo = AdderOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		753F491A1C20D790002F0AE4 /* AdderOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdderOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		753F491D1C20D790002F0AE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		753F491E1C20D790002F0AE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		753F49211C20D790002F0AE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		753F49231C20D790002F0AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		753F49261C20D790002F0AE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		753F49281C20D790002F0AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753F492D1C20D790002F0AE4 /* AdderOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdderOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		753F49311C20D790002F0AE4 /* AdderOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdderOCTests.m; sourceTree = "<group>"; };
+		753F49331C20D790002F0AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753F49381C20D790002F0AE4 /* AdderOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdderOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		753F493C1C20D790002F0AE4 /* AdderOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdderOCUITests.m; sourceTree = "<group>"; };
+		753F493E1C20D790002F0AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7570C2301C20DEA300D40F14 /* Adder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adder.framework; path = ../../../../Library/Frameworks/Adder.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		753F49171C20D790002F0AE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7570C2311C20DEA300D40F14 /* Adder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753F492A1C20D790002F0AE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753F49351C20D790002F0AE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		753F49111C20D790002F0AE4 = {
+			isa = PBXGroup;
+			children = (
+				753F491C1C20D790002F0AE4 /* AdderOC */,
+				753F49301C20D790002F0AE4 /* AdderOCTests */,
+				753F493B1C20D790002F0AE4 /* AdderOCUITests */,
+				753F491B1C20D790002F0AE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		753F491B1C20D790002F0AE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				753F491A1C20D790002F0AE4 /* AdderOC.app */,
+				753F492D1C20D790002F0AE4 /* AdderOCTests.xctest */,
+				753F49381C20D790002F0AE4 /* AdderOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		753F491C1C20D790002F0AE4 /* AdderOC */ = {
+			isa = PBXGroup;
+			children = (
+				753F491D1C20D790002F0AE4 /* AppDelegate.h */,
+				753F491E1C20D790002F0AE4 /* AppDelegate.m */,
+				753F49231C20D790002F0AE4 /* Assets.xcassets */,
+				753F49251C20D790002F0AE4 /* MainMenu.xib */,
+				753F49281C20D790002F0AE4 /* Info.plist */,
+				7570C2301C20DEA300D40F14 /* Adder.framework */,
+				753F49201C20D790002F0AE4 /* Supporting Files */,
+			);
+			path = AdderOC;
+			sourceTree = "<group>";
+		};
+		753F49201C20D790002F0AE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				753F49211C20D790002F0AE4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		753F49301C20D790002F0AE4 /* AdderOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				753F49311C20D790002F0AE4 /* AdderOCTests.m */,
+				753F49331C20D790002F0AE4 /* Info.plist */,
+			);
+			path = AdderOCTests;
+			sourceTree = "<group>";
+		};
+		753F493B1C20D790002F0AE4 /* AdderOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				753F493C1C20D790002F0AE4 /* AdderOCUITests.m */,
+				753F493E1C20D790002F0AE4 /* Info.plist */,
+			);
+			path = AdderOCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		753F49191C20D790002F0AE4 /* AdderOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753F49411C20D790002F0AE4 /* Build configuration list for PBXNativeTarget "AdderOC" */;
+			buildPhases = (
+				753F49161C20D790002F0AE4 /* Sources */,
+				753F49171C20D790002F0AE4 /* Frameworks */,
+				753F49181C20D790002F0AE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdderOC;
+			productName = AdderOC;
+			productReference = 753F491A1C20D790002F0AE4 /* AdderOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		753F492C1C20D790002F0AE4 /* AdderOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753F49441C20D790002F0AE4 /* Build configuration list for PBXNativeTarget "AdderOCTests" */;
+			buildPhases = (
+				753F49291C20D790002F0AE4 /* Sources */,
+				753F492A1C20D790002F0AE4 /* Frameworks */,
+				753F492B1C20D790002F0AE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				753F492F1C20D790002F0AE4 /* PBXTargetDependency */,
+			);
+			name = AdderOCTests;
+			productName = AdderOCTests;
+			productReference = 753F492D1C20D790002F0AE4 /* AdderOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		753F49371C20D790002F0AE4 /* AdderOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753F49471C20D790002F0AE4 /* Build configuration list for PBXNativeTarget "AdderOCUITests" */;
+			buildPhases = (
+				753F49341C20D790002F0AE4 /* Sources */,
+				753F49351C20D790002F0AE4 /* Frameworks */,
+				753F49361C20D790002F0AE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				753F493A1C20D790002F0AE4 /* PBXTargetDependency */,
+			);
+			name = AdderOCUITests;
+			productName = AdderOCUITests;
+			productReference = 753F49381C20D790002F0AE4 /* AdderOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		753F49121C20D790002F0AE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Tom Elliott";
+				TargetAttributes = {
+					753F49191C20D790002F0AE4 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					753F492C1C20D790002F0AE4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 753F49191C20D790002F0AE4;
+					};
+					753F49371C20D790002F0AE4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 753F49191C20D790002F0AE4;
+					};
+				};
+			};
+			buildConfigurationList = 753F49151C20D790002F0AE4 /* Build configuration list for PBXProject "AdderOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 753F49111C20D790002F0AE4;
+			productRefGroup = 753F491B1C20D790002F0AE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				753F49191C20D790002F0AE4 /* AdderOC */,
+				753F492C1C20D790002F0AE4 /* AdderOCTests */,
+				753F49371C20D790002F0AE4 /* AdderOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		753F49181C20D790002F0AE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753F49241C20D790002F0AE4 /* Assets.xcassets in Resources */,
+				753F49271C20D790002F0AE4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753F492B1C20D790002F0AE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753F49361C20D790002F0AE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		753F49161C20D790002F0AE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753F49221C20D790002F0AE4 /* main.m in Sources */,
+				753F491F1C20D790002F0AE4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753F49291C20D790002F0AE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753F49321C20D790002F0AE4 /* AdderOCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753F49341C20D790002F0AE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753F493D1C20D790002F0AE4 /* AdderOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		753F492F1C20D790002F0AE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753F49191C20D790002F0AE4 /* AdderOC */;
+			targetProxy = 753F492E1C20D790002F0AE4 /* PBXContainerItemProxy */;
+		};
+		753F493A1C20D790002F0AE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753F49191C20D790002F0AE4 /* AdderOC */;
+			targetProxy = 753F49391C20D790002F0AE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		753F49251C20D790002F0AE4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				753F49261C20D790002F0AE4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		753F493F1C20D790002F0AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		753F49401C20D790002F0AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		753F49421C20D790002F0AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = AdderOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		753F49431C20D790002F0AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Library/Frameworks",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = AdderOC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		753F49451C20D790002F0AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdderOC.app/Contents/MacOS/AdderOC";
+			};
+			name = Debug;
+		};
+		753F49461C20D790002F0AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdderOC.app/Contents/MacOS/AdderOC";
+			};
+			name = Release;
+		};
+		753F49481C20D790002F0AE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AdderOC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		753F49491C20D790002F0AE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AdderOC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		753F49151C20D790002F0AE4 /* Build configuration list for PBXProject "AdderOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753F493F1C20D790002F0AE4 /* Debug */,
+				753F49401C20D790002F0AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753F49411C20D790002F0AE4 /* Build configuration list for PBXNativeTarget "AdderOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753F49421C20D790002F0AE4 /* Debug */,
+				753F49431C20D790002F0AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753F49441C20D790002F0AE4 /* Build configuration list for PBXNativeTarget "AdderOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753F49451C20D790002F0AE4 /* Debug */,
+				753F49461C20D790002F0AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753F49471C20D790002F0AE4 /* Build configuration list for PBXNativeTarget "AdderOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753F49481C20D790002F0AE4 /* Debug */,
+				753F49491C20D790002F0AE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 753F49121C20D790002F0AE4 /* Project object */;
+}

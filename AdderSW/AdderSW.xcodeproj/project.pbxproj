@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		758EFDC01C20DCC50091AA8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758EFDBF1C20DCC50091AA8F /* AppDelegate.swift */; };
+		758EFDC21C20DCC50091AA8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758EFDC11C20DCC50091AA8F /* Assets.xcassets */; };
+		758EFDC51C20DCC50091AA8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 758EFDC31C20DCC50091AA8F /* MainMenu.xib */; };
+		758EFDD01C20DCC50091AA8F /* AdderSWTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758EFDCF1C20DCC50091AA8F /* AdderSWTests.swift */; };
+		758EFDDB1C20DCC50091AA8F /* AdderSWUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758EFDDA1C20DCC50091AA8F /* AdderSWUITests.swift */; };
+		758EFDE91C20DCD50091AA8F /* Adder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758EFDE81C20DCD50091AA8F /* Adder.framework */; };
+		758EFDEC1C20DD630091AA8F /* dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 758EFDEB1C20DD630091AA8F /* dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		758EFDCC1C20DCC50091AA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758EFDB41C20DCC50091AA8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758EFDBB1C20DCC50091AA8F;
+			remoteInfo = AdderSW;
+		};
+		758EFDD71C20DCC50091AA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758EFDB41C20DCC50091AA8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758EFDBB1C20DCC50091AA8F;
+			remoteInfo = AdderSW;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		758EFDBC1C20DCC50091AA8F /* AdderSW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdderSW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758EFDBF1C20DCC50091AA8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		758EFDC11C20DCC50091AA8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		758EFDC41C20DCC50091AA8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		758EFDC61C20DCC50091AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758EFDCB1C20DCC50091AA8F /* AdderSWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdderSWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758EFDCF1C20DCC50091AA8F /* AdderSWTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdderSWTests.swift; sourceTree = "<group>"; };
+		758EFDD11C20DCC50091AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758EFDD61C20DCC50091AA8F /* AdderSWUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdderSWUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758EFDDA1C20DCC50091AA8F /* AdderSWUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdderSWUITests.swift; sourceTree = "<group>"; };
+		758EFDDC1C20DCC50091AA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758EFDE81C20DCD50091AA8F /* Adder.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adder.framework; path = "../build-C/Adder.framework"; sourceTree = "<group>"; };
+		758EFDEA1C20DD620091AA8F /* AdderSW-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdderSW-Bridging-Header.h"; sourceTree = "<group>"; };
+		758EFDEB1C20DD630091AA8F /* dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dummy.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		758EFDB91C20DCC50091AA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EFDE91C20DCD50091AA8F /* Adder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EFDC81C20DCC50091AA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EFDD31C20DCC50091AA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		758EFDB31C20DCC50091AA8F = {
+			isa = PBXGroup;
+			children = (
+				758EFDE81C20DCD50091AA8F /* Adder.framework */,
+				758EFDBE1C20DCC50091AA8F /* AdderSW */,
+				758EFDCE1C20DCC50091AA8F /* AdderSWTests */,
+				758EFDD91C20DCC50091AA8F /* AdderSWUITests */,
+				758EFDBD1C20DCC50091AA8F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		758EFDBD1C20DCC50091AA8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				758EFDBC1C20DCC50091AA8F /* AdderSW.app */,
+				758EFDCB1C20DCC50091AA8F /* AdderSWTests.xctest */,
+				758EFDD61C20DCC50091AA8F /* AdderSWUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		758EFDBE1C20DCC50091AA8F /* AdderSW */ = {
+			isa = PBXGroup;
+			children = (
+				758EFDBF1C20DCC50091AA8F /* AppDelegate.swift */,
+				758EFDEB1C20DD630091AA8F /* dummy.m */,
+				758EFDC11C20DCC50091AA8F /* Assets.xcassets */,
+				758EFDC31C20DCC50091AA8F /* MainMenu.xib */,
+				758EFDC61C20DCC50091AA8F /* Info.plist */,
+				758EFDEA1C20DD620091AA8F /* AdderSW-Bridging-Header.h */,
+			);
+			path = AdderSW;
+			sourceTree = "<group>";
+		};
+		758EFDCE1C20DCC50091AA8F /* AdderSWTests */ = {
+			isa = PBXGroup;
+			children = (
+				758EFDCF1C20DCC50091AA8F /* AdderSWTests.swift */,
+				758EFDD11C20DCC50091AA8F /* Info.plist */,
+			);
+			path = AdderSWTests;
+			sourceTree = "<group>";
+		};
+		758EFDD91C20DCC50091AA8F /* AdderSWUITests */ = {
+			isa = PBXGroup;
+			children = (
+				758EFDDA1C20DCC50091AA8F /* AdderSWUITests.swift */,
+				758EFDDC1C20DCC50091AA8F /* Info.plist */,
+			);
+			path = AdderSWUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		758EFDBB1C20DCC50091AA8F /* AdderSW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758EFDDF1C20DCC50091AA8F /* Build configuration list for PBXNativeTarget "AdderSW" */;
+			buildPhases = (
+				758EFDB81C20DCC50091AA8F /* Sources */,
+				758EFDB91C20DCC50091AA8F /* Frameworks */,
+				758EFDBA1C20DCC50091AA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdderSW;
+			productName = AdderSW;
+			productReference = 758EFDBC1C20DCC50091AA8F /* AdderSW.app */;
+			productType = "com.apple.product-type.application";
+		};
+		758EFDCA1C20DCC50091AA8F /* AdderSWTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758EFDE21C20DCC50091AA8F /* Build configuration list for PBXNativeTarget "AdderSWTests" */;
+			buildPhases = (
+				758EFDC71C20DCC50091AA8F /* Sources */,
+				758EFDC81C20DCC50091AA8F /* Frameworks */,
+				758EFDC91C20DCC50091AA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758EFDCD1C20DCC50091AA8F /* PBXTargetDependency */,
+			);
+			name = AdderSWTests;
+			productName = AdderSWTests;
+			productReference = 758EFDCB1C20DCC50091AA8F /* AdderSWTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		758EFDD51C20DCC50091AA8F /* AdderSWUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758EFDE51C20DCC50091AA8F /* Build configuration list for PBXNativeTarget "AdderSWUITests" */;
+			buildPhases = (
+				758EFDD21C20DCC50091AA8F /* Sources */,
+				758EFDD31C20DCC50091AA8F /* Frameworks */,
+				758EFDD41C20DCC50091AA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758EFDD81C20DCC50091AA8F /* PBXTargetDependency */,
+			);
+			name = AdderSWUITests;
+			productName = AdderSWUITests;
+			productReference = 758EFDD61C20DCC50091AA8F /* AdderSWUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		758EFDB41C20DCC50091AA8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Tom Elliott";
+				TargetAttributes = {
+					758EFDBB1C20DCC50091AA8F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					758EFDCA1C20DCC50091AA8F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 758EFDBB1C20DCC50091AA8F;
+					};
+					758EFDD51C20DCC50091AA8F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 758EFDBB1C20DCC50091AA8F;
+					};
+				};
+			};
+			buildConfigurationList = 758EFDB71C20DCC50091AA8F /* Build configuration list for PBXProject "AdderSW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 758EFDB31C20DCC50091AA8F;
+			productRefGroup = 758EFDBD1C20DCC50091AA8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				758EFDBB1C20DCC50091AA8F /* AdderSW */,
+				758EFDCA1C20DCC50091AA8F /* AdderSWTests */,
+				758EFDD51C20DCC50091AA8F /* AdderSWUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		758EFDBA1C20DCC50091AA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EFDC21C20DCC50091AA8F /* Assets.xcassets in Resources */,
+				758EFDC51C20DCC50091AA8F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EFDC91C20DCC50091AA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EFDD41C20DCC50091AA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		758EFDB81C20DCC50091AA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EFDEC1C20DD630091AA8F /* dummy.m in Sources */,
+				758EFDC01C20DCC50091AA8F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EFDC71C20DCC50091AA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EFDD01C20DCC50091AA8F /* AdderSWTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758EFDD21C20DCC50091AA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758EFDDB1C20DCC50091AA8F /* AdderSWUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		758EFDCD1C20DCC50091AA8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758EFDBB1C20DCC50091AA8F /* AdderSW */;
+			targetProxy = 758EFDCC1C20DCC50091AA8F /* PBXContainerItemProxy */;
+		};
+		758EFDD81C20DCC50091AA8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758EFDBB1C20DCC50091AA8F /* AdderSW */;
+			targetProxy = 758EFDD71C20DCC50091AA8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		758EFDC31C20DCC50091AA8F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758EFDC41C20DCC50091AA8F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		758EFDDD1C20DCC50091AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		758EFDDE1C20DCC50091AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		758EFDE01C20DCC50091AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Library/Frameworks";
+				INFOPLIST_FILE = AdderSW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderSW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdderSW/AdderSW-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		758EFDE11C20DCC50091AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Library/Frameworks";
+				INFOPLIST_FILE = AdderSW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderSW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AdderSW/AdderSW-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		758EFDE31C20DCC50091AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderSWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderSWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdderSW.app/Contents/MacOS/AdderSW";
+			};
+			name = Debug;
+		};
+		758EFDE41C20DCC50091AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderSWTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderSWTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AdderSW.app/Contents/MacOS/AdderSW";
+			};
+			name = Release;
+		};
+		758EFDE61C20DCC50091AA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderSWUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderSWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AdderSW;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		758EFDE71C20DCC50091AA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = AdderSWUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = te.AdderSWUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = AdderSW;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		758EFDB71C20DCC50091AA8F /* Build configuration list for PBXProject "AdderSW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758EFDDD1C20DCC50091AA8F /* Debug */,
+				758EFDDE1C20DCC50091AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758EFDDF1C20DCC50091AA8F /* Build configuration list for PBXNativeTarget "AdderSW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758EFDE01C20DCC50091AA8F /* Debug */,
+				758EFDE11C20DCC50091AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		758EFDE21C20DCC50091AA8F /* Build configuration list for PBXNativeTarget "AdderSWTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758EFDE31C20DCC50091AA8F /* Debug */,
+				758EFDE41C20DCC50091AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		758EFDE51C20DCC50091AA8F /* Build configuration list for PBXNativeTarget "AdderSWUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758EFDE61C20DCC50091AA8F /* Debug */,
+				758EFDE71C20DCC50091AA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 758EFDB41C20DCC50091AA8F /* Project object */;
+}
