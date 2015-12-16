@@ -11,7 +11,7 @@ int f1(int);
 
 int f1(int x){
     printf( "f1: %d;", x );
-        return x+1;
+    return x+1;
 }
 
 int main(int argc, char** argv){
@@ -125,14 +125,26 @@ f2: 10;  main 20
 >
 ```
 
+This requires `add.h`:
+
+```bash
+> mv add.h tmp
+> clang -g -Wall useadd.c add1.o add2.o -o prog
+useadd.c:2:10: fatal error: 'add.h' file not found
+#include "add.h"
+         ^
+1 error generated.
+>
+```
+
 <hr>
 
-#### Step 5:  Combine `add1.c` and `add2.c` into static library.
+#### Step 5:  Combine `add1.c` and `add2.c` into a *static* library.
 
 ```bash
 > libtool -static add*.o -o libadd.a
 ```
-To use the library, tell the linker where to find the library, search in the current directory (`-L.`) for a library called `add`, i.e. `libadd.a`.
+To use the library, tell the linker where to find the library.  For example, we can search in the current directory (`-L.`) for a library called `-ladd`, which stands for `libadd.a`.
 
 ```bash
 > clang -g -Wall -o useadd useadd.c -L. -ladd
@@ -145,18 +157,34 @@ f2: 10;  main 20
 
 <hr>
 
-#### Step 6:  Combine `add1.c` and `add2.c` into a dynamic library.  To use it we also compile `useadd.c` to an object .o file.
+#### Step 6:  Combine `add1.c` and `add2.c` into a *dynamic* library.
+
+```bash
+> clang -dynamiclib -current_version 1.0  add*.o  -o libadd.dylib
+> clang useadd.c ./libadd.dylib -o useadd
+> ./useadd
+useadd
+f1: 1;  main 2
+f2: 10;  main 20
+>
+```
+
+```bash
+> otool -L libadd.a
+Archive : libadd.a
+libadd.a(add1.o):
+libadd.a(add2.o):
+> otool -L libadd.dylib
+libadd.dylib:
+	libadd.dylib (compatibility version 0.0.0, current version 1.0.0)
+	/usr/lib/libSystem.B.dylib (compatibility version 1.0.0, current version 1226.10.1)
+>
+```
+
+To use it we *may* also compile `useadd.c` to an object .o file.
 
 ```bash
 > clang -c useadd.c
-> clang -v useadd.o ./libadd.dylib -o useadd
-Apple LLVM version 7.0.2 (clang-700.1.81)
-Target: x86_64-apple-darwin15.2.0
-Thread model: posix
- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.11.0 -o useadd useadd.o ./libadd.dylib -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/7.0.2/lib/darwin/libclang_rt.osx.a
-```
-or just
-```bash
 > clang useadd.o ./libadd.dylib -o useadd
 > ./useadd
 useadd
@@ -170,9 +198,8 @@ f2: 10;  main 20
 #### Step 7:  Use an OS X framework from the command line:
 
 test2.m
-```Objective C
+```objective-c
 #import <Foundation/Foundation.h>
-
 int main (int argc, const char* argv[]) {
     NSDictionary *eD = [[NSProcessInfo processInfo] environment];
     NSLog(@"%@",[[eD objectForKey:@"USER"] description]);
