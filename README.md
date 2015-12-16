@@ -198,7 +198,8 @@ f2: 10;  main 20
 #### Step 7:  Use an OS X framework from the command line:
 
 test2.m
-```objective-c
+
+```objc
 #import <Foundation/Foundation.h>
 int main (int argc, const char* argv[]) {
     NSDictionary *eD = [[NSProcessInfo processInfo] environment];
@@ -256,7 +257,8 @@ Make a new Xcode project.
 Simply drag the framework from a Finder window onto the Xcode General tab under Linked Frameworks and Libraries.
 
 In the AppDelegate, do:
-```Objective-C
+
+```objc
 #import "Adder/Adder.h"
 ```
 
@@ -270,14 +272,14 @@ Now it builds.
 
 Add this code to the AppDelegate:
 
-```Objective-C
+```objc
 int x = f1(1);
 printf("AD: %d;", x);
 ```
 
 The compiler complains that "implicit declaration of function 'f1' is invalid in C99".  But it will still build.  Run the app, and the debugger prints:
 
-```
+```bash
 f1: 1;AD: 2;
 ```
 
@@ -285,6 +287,15 @@ I tried to fix this by addding the file `add.h` to the Adder framework, and foll
 
 #### Step 10:  Use the Adder framework from a new Xcode Cocoa app written in Swift.
 
-I was able to import Adder without any trouble, once I added a bridging header.  
+I was able to import `Adder` without any trouble, once I added a bridging header.  
 
 But I was not able to call the function `f1` from Swift.  Embedding the binary into the App didn't help.
+
+#### Step 11:  Import one my Swift frameworks from a swift program executing on the command line.  
+
+Build the framework and control-click on the product and then do show in Finder and drag it to `~/Library/Frameworks`.  Now do
+
+```bash
+xcrun swiftc encryptorTest.swift -o prog -F ~/Library/Frameworks -sdk $(xcrun --show-sdk-path --sdk macosx)
+```
+We do `-F ~/Library/Frameworks` as before, and we also need to tell the linker where the SDK we are building for is located.
