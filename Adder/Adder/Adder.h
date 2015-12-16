@@ -16,4 +16,6 @@ FOUNDATION_EXPORT const unsigned char AdderVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Adder/PublicHeader.h>
 
+#import <Adder/add.h>
+
 

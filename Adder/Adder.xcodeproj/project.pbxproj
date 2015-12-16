@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7578A3C61C21D60A0070A142 /* add.h in Headers */ = {isa = PBXBuildFile; fileRef = 7578A3C51C21D60A0070A142 /* add.h */; };
 		758969CE1C20D4A300AC9473 /* Adder.h in Headers */ = {isa = PBXBuildFile; fileRef = 758969CD1C20D4A300AC9473 /* Adder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		758969D51C20D4A300AC9473 /* Adder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 758969CA1C20D4A300AC9473 /* Adder.framework */; };
 		758969DA1C20D4A300AC9473 /* AdderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 758969D91C20D4A300AC9473 /* AdderTests.m */; };
@@ -25,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7578A3C51C21D60A0070A142 /* add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = add.h; sourceTree = "<group>"; };
 		758969CA1C20D4A300AC9473 /* Adder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Adder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		758969CD1C20D4A300AC9473 /* Adder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adder.h; sourceTree = "<group>"; };
 		758969CF1C20D4A300AC9473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				758969CF1C20D4A300AC9473 /* Info.plist */,
 				758969E41C20D4BA00AC9473 /* add1.c */,
 				758969E51C20D4BA00AC9473 /* add2.c */,
+				7578A3C51C21D60A0070A142 /* add.h */,
 			);
 			path = Adder;
 			sourceTree = "<group>";
@@ -99,6 +102,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7578A3C61C21D60A0070A142 /* add.h in Headers */,
 				758969CE1C20D4A300AC9473 /* Adder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +389,7 @@
 				758969E01C20D4A300AC9473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		758969E11C20D4A300AC9473 /* Build configuration list for PBXNativeTarget "AdderTests" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +398,7 @@
 				758969E31C20D4A300AC9473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

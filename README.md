@@ -219,7 +219,11 @@ int main (int argc, const char* argv[]) {
 
 Use that framework from the command line.  
 
-I will just link to the [blog](http://telliott99.blogspot.com/2015/12/swift-using-c-framework.html) for an explanation of how to do this.  Once we have the framework, we can copy it into the build directory and do:
+I will just link to the [blog](http://telliott99.blogspot.com/2015/12/swift-using-c-framework.html) for an explanation of how to do this.  
+
+
+
+Once we have the framework, we can copy it into the build directory and do:
 
 ```bash
 > clang -g -o useadd -F .  -framework Adder useadd.c
@@ -230,10 +234,14 @@ f2: 10;  main 12
 >
 ```
 
-Alternatively, we can place the framework somewhere like `~/Libary/Frameworks`.  Having done that, we need to tell `clang` where to search:
+Before we used `L` to give a search path for libraries, similarly we use `F` to give a search path for frameworks.  
+
+It's better if we can place the framework somewhere like `~/Libary/Frameworks`.  
+
+Having done that, we revise the call to tell `clang` where to search:
 
 ```bash>
-clang -g -o useadd -F ~/Library/Frameworks  -framework Adder useadd.c
+> clang -g -F ~/Library/Frameworks  -framework Adder useadd.c -o useadd
 > ./useadd
 useadd
 f1: 1;  main 2
@@ -243,16 +251,22 @@ f2: 10;  main 20
 
 #### Step 9:  Use the Adder framework from a new Xcode Cocoa app written in Objective-C.  
 
-Simply drag the header from a Finder window onto the Xcode General tab under Linked Frameworks and Libraries.
+Make a new Xcode project.
+
+Simply drag the framework from a Finder window onto the Xcode General tab under Linked Frameworks and Libraries.
 
 In the AppDelegate, do:
 ```Objective-C
 #import "Adder/Adder.h"
 ```
 
-This was enough on one trial I did.  But upon repeating all the steps now, it fails... Xcode says it can't find the header.  Fix this by going to Build Settings > Search Paths > Framework Search Paths, and add the path `~/Library/Frameworks` under the app `AdderOC` (not the project).
+This was enough on one trial I did.  
 
-Now it works.
+But upon repeating all the steps now, it fails... Xcode says it can't find the header.  Fix this by going to Build Settings > Search Paths > Framework Search Paths, and add the path `~/Library/Frameworks` under the app `AdderOC` (not the project).
+
+Add Library Search Paths as well (`~/Library/Frameworks/Adder.framework/Headers`).
+
+Now it builds.
 
 Add this code to the AppDelegate:
 
@@ -261,11 +275,13 @@ int x = f1(1);
 printf("AD: %d;", x);
 ```
 
-The compiler complains that "implicit declaration of function 'f1' is invalid in C99".  But it's just a warning.  Run the app, and the debugger prints:
+The compiler complains that "implicit declaration of function 'f1' is invalid in C99".  But it will still build.  Run the app, and the debugger prints:
 
 ```
 f1: 1;AD: 2;
 ```
+
+I tried to fix this by addding the file `add.h` to the Adder framework, and following the instructions in `Adder.h`, but it didn't help.
 
 #### Step 10:  Use the Adder framework from a new Xcode Cocoa app written in Swift.
 

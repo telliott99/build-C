@@ -1,6 +1,0 @@
-framework module Adder {
-  umbrella header "Adder.h"
-
-  export *
-  module * { export * }
-}
