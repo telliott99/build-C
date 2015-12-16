@@ -242,4 +242,6 @@ f1: 1;AD: 2;
 
 #### Step 10:  Use the Adder framework from a new Xcode Cocoa app written in Swift.
 
-I was able to import Adder without any trouble, once I added a bridging header.  But I was not able to call the function `f1` from Swift.
+I was able to import Adder without any trouble, once I added a bridging header.  
+
+But I was not able to call the function `f1` from Swift.  Embedding the binary into the App didn't help.
